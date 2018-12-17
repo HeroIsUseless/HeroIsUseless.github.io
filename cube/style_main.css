@@ -1,0 +1,18 @@
+@charset="UTF-8"
+div{
+	margin: 20px;
+	width: 600px;
+	height: 40px;
+	background: rgb(213,223,223);
+}
+#div0{
+	background: rgb(213,223,223);
+}
+#div1{
+	border-radius: 15px;
+	background: rgb(240,240,242);
+}
+#div2{
+	border-radius: 15px;
+	background: rgb(240,240,242);
+}

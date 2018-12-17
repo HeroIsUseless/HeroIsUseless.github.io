@@ -1,0 +1,7 @@
+#dFoot{
+	width: 500px;
+	height: 30px;
+	background: rgb(206,208,214);
+	position: fixed;
+	bottom: 0px;
+}

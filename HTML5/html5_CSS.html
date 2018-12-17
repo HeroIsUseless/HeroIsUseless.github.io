@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UFT-8">
+	<title>main</title>
+	<link rel="stylesheet" type="text/css" href="style_main.css">
+</head>
+<body>
+	<h1>CSS</h1>
+	<hr>
+	<p>插入样式有三种方法：1.内联样式表(行内) 2.内部样式表(style中) 3.外部样式表(先创建一个外部样式表，然后在head中使用link元素插入样式表)</p>
+	<h2>CSS语法</h2>
+	<hr>
+	<p>link语法为:link rel="stylesheet" type="text/css" href=""</p>
+	<p>rel属性代表要引用一个外部文档</p>
+	<p>href属性要写入一个样式表的地址</p>
+	<p>@charset "uft-8"；代表本文档要用什么编码，因为默认为uft-8，因此不写也可以(写的话注意有分号)</p>
+	<p>元素，元素...{属性:值;属性:值...}</p>
+	<p>单一元素的多个属性之间用分号隔开；若只有一个可以省略，如果值为若干单词，则要给值加引号；除了这种情况外其他时候不可以加引号</p>
+	<p>多个元素之间用逗号隔开，例子：p,h3,div{color: red}</p>
+	<p>css代码的注释：/**/,快捷键是选中ctrl+?</p>
+	<p>样式的优先顺序：设计者设计的样式>浏览器用户自定义的样式>浏览器自设的样式</p>
+	<p>行内(内联)样式>内部样式：style中的样式>外部样式</p>
+	<p>强制优先级：! important 强制使用的</p>
+	<p>可以为一个HTML文档内部引用多个CSS样式表</p>
+	<h2>CSS选择器</h2>
+	<hr>
+	<p>选择器就是选择样式作用的对象</p>
+	<p>id选择器用#定义，类选择器用.显示，对于特定的HTML元素也可以单独作用，还有标签选择器，其实有N种选择器</p>
+	<p>属性选择器E[att]:选择具有att属性的E元素，东西实在太多了，而且都没用，必须用其他愿望了</p>
+</body>
+</html>

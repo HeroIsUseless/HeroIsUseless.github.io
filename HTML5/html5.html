@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UFT-8">
+	<title>hello world!</title>
+</head>
+<body>
+	<h1>基本知识</h1>
+	<hr>
+	<p>万维网的核心语言、 标准通用标记语言下的一个应用 超文本标记语言（ HTML）的第五次重大修改（这是一项推荐标准、外语原文： W3C Recommendation、见本处 参考资料原文内容： [1] ）。
+2014年10月29日， 万维网联盟宣布，经过接近8年的艰苦努力，该标准规范终于制定完成。W3C 在 1 月 22 日发布了最新的 HTML 5 工作草案。HTML 5 工作组包括 AOL, Apple, Google, IBM, Microsoft, Mozilla, Nokia, Opera 以及数百个其他的开发商。HTML5中的一些新特性：嵌入音频、视频、图片的函数、客户端数据存储，以及交互式文档。其他特性包括新的页面元素，通过制定如何处理所有 HTML 元素以及如何从错误中恢复的精确规则，HTML 5 改进了互操作性，并减少了开发成本。</p>
+	<h2>绝对路径与相对路径</h2>
+	<hr>
+	<p>1.绝对路径：需要指出链接资源的绝对位置，与你的HTML文档位置无关，多见于服务器中的位置，例如:href="http://www.nipic.com/show/2/52/8144173k9c3cc84f.html"，本地存储则用:file:///D:\zhuomian\html\lesson\xishi.png注意它们的斜杠符不同。</p>
+	<p>相对路径：与你的HTML文档的位置有关，同一个路径直接写出文件名，在下级路径：路径/资源名，在下下级路径：xx/xx/资源名，在上级路径：../资源名，在上上级路径：../../资源名</p>
+	<h2>字体</h2>
+	<hr>
+	<p>1."!--???--"为注释符。</p>
+	<p>2."h1"代表标题，字体变大，加粗，共6个。</p>
+	<p>3."hr"单标签，用于加横线。</p>
+	<p>4.align属性：对齐方式（left为默认）。</p>
+	<p>5."b"加粗内容。</p>
+	<table style="width: 818px; height: 617px;" border="0" align="center">
+	<tbody>
+		<tr><td>元素名称</td><td>说明</td></tr>
+		<tr><td>a</td><td>生成超链接</td></tr>
+		<tr><td>br</td><td>强制换行 </td></tr>
+		<tr><td>wbr</td><td>可安全换行 </td></tr>
+		<tr><td>del</td><td><del>删除文字</del>  </td></tr>
+		<tr><td>b</td><td>标记一段文字但不强调，就是<b>加粗文字</b></td></tr>
+		<tr><td>i</td><td>表示外文或科学术语，就是<i>倾斜文字</i> </td></tr>
+		<tr><td>em</td><td>表示强调</td></tr>
+		<tr><td>code</td><td>表示计算机代码 </td></tr>
+		<tr><td>var</td><td>表示程序输出 </td></tr>
+		<tr><td>samp</td><td>表示变量</td></tr>
+		<tr><td>strong</td><td>表示强调一段文本，实际作用也是<strong>加粗文字</strong></td></tr>
+		<tr><td>kdb</td><td>表示用户输入</td></tr>
+		<tr><td>abbr</td><td>表示缩写 </td></tr>
+		<tr><td>cite</td><td>表示其他作品的标题 </td></tr>
+		<tr><td>s</td><td>表示文字已不再确认 </td></tr>
+		<tr><td>dfn</td><td>表示术语定义 </td></tr>
+		<tr><td>mark</td><td>表示与另一段上下文有关的内容 </td></tr>
+		<tr><td>q</td><td>表示引自他处的内容</td></tr>
+		<tr><td>rq</td><td>与 ruby 元素结合使用，标记括号 </td></tr>
+		<tr><td>rt</td><td>与 ruby 元素结合使用，标记括号 </td></tr>
+		<tr><td>ruby</td><td>表示位于表意文字上方或右方的注音符号 </td></tr>
+		<tr><td>bdo</td><td>控制文字的方向 </td></tr>
+		<tr><td>small</td><td>表示小号字体内容 </td></tr>
+		<tr><td>sup</td><td>表示下标字体，例如100<sub>2</sub> </td></tr>
+		<tr><td>sub</td><td>表示上标字体例如100<sup>2</sup> </td></tr>
+		<tr><td>time</td><td>表示时间或日期 </td></tr>
+		<tr><td>u</td><td>标记一段文字但不强调，就是加<u>下划线</u> </td></tr>
+		<tr><td>span</td><td>通用元素，没有任何语义。一般配合 CSS 修饰</td></tr>
+	</tbody>
+</table>
+
+	<h2>HTML 字符实体</h2>
+	<hr>
+	<p>在HTML中，某些字符是预留的，如果希望正确地显示预留字符，我们必须在HTML源代码中使用字符实体（character entities）</p>
+	<table>
+		<tr><td>符号</td><td>实体名称</td><td>实体数值</td><td>描述</td></tr>
+	</table>
+	<p>不间断空格(Non-breaking Space):HTML 中的常用字符实体是不间断空格(& nbsp;)。浏览器总是会截短 HTML 页面中的空格。如果您在文本中写 10个空格，在显示该页面之前，浏览器会删除它们中的 9 个。如需在页面中增加空格的数量，您需要使用 & nbsp; 字符实体。</p>
+	<p>结合音标符:发音符号是加到字母上的一个"glyph(字形)"。一些变音符号, 如 尖音符 (  ̀) 和 抑音符 (),变音符号可以出现字母的上面和下面，或者字母里面，或者两个字母间。变音符号可以与字母、数字字符的组合来使用。</p>
+	<table class="reference notranslate" style="font-size:14px">
+		<tbody><tr>
+		<th style="width:15%">音标符</th>
+		<th style="width:15%">字符</th>
+		<th>Construct</th>
+		<th style="width:15%">输出结果 </th>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;̀</td>
+		      <td>a</td>
+		      <td>a&amp;#768;</td>
+		      <td>à</td>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;́</td>
+		      <td>a</td>
+		      <td>a&amp;#769;</td>
+		      <td>á</td>
+		</tr>
+		<tr>
+		      <td> ̂</td>
+		      <td>a</td>
+		      <td>a&amp;#770;</td>
+		      <td>â</td>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;̃</td>
+		      <td>a</td>
+		      <td>a&amp;#771;</td>
+		      <td>ã</td>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;̀</td>
+		      <td>O</td>
+		      <td>O&amp;#768;</td>
+		      <td>Ò</td>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;́</td>
+		      <td>O</td>
+		      <td>O&amp;#769;</td>
+		      <td>Ó</td>
+		</tr>
+		<tr>
+		      <td> ̂</td>
+		      <td>O</td>
+		      <td>O&amp;#770;</td>
+		      <td>Ô</td>
+		</tr>
+		<tr>
+		      <td> &nbsp;&nbsp;̃</td>
+		      <td>O</td>
+		      <td>O&amp;#771;</td>
+		      <td>Õ</td>
+		</tr>
+
+	</tbody></table>
+	<p>下面是字符实体的表示：</p>
+	<table class="reference">
+
+	    <tbody><tr>
+	      <th style="width:20%">显示结果</th>
+	      <th style="width:20%">描述</th>
+	      <th style="width:30%">实体名称</th>
+	      <th style="width:30%">实体编号</th>
+	    </tr>
+
+	    <tr>
+	      <td>&nbsp;</td>
+	      <td>空格</td>
+	      <td>&amp;nbsp;</td>
+	      <td>&amp;#160;</td>
+	    </tr>
+
+	    <tr>
+	      <td>&lt;</td>
+	      <td>小于号</td>
+	      <td>&amp;lt;</td>
+	      <td>&amp;#60;</td>
+	    </tr>
+
+	    <tr>
+	      <td>&gt;</td>
+	      <td>大于号</td>
+	      <td>&amp;gt;</td>
+	      <td>&amp;#62;</td>
+	    </tr>
+
+	    <tr>
+	      <td>&amp;</td>
+	      <td>和号</td>
+	      <td>&amp;amp;</td>
+	      <td>&amp;#38;</td>
+	    </tr>
+
+	    <tr>
+	      <td>"</td>
+	      <td>引号</td>
+	      <td>&amp;quot;</td>
+	      <td>&amp;#34;</td>
+	    </tr>
+
+	    <tr>
+	      <td>'</td>
+	      <td>撇号&nbsp;</td>
+	      <td>&amp;apos; (IE不支持)</td>
+	      <td>&amp;#39;</td>
+	    </tr>
+
+	    <tr>
+	      <td>￠</td>
+	      <td>分</td>
+	      <td>&amp;cent;</td>
+	      <td>&amp;#162;</td>
+	    </tr>
+
+	    <tr>
+	      <td>£</td>
+	      <td>镑</td>
+	      <td>&amp;pound;</td>
+	      <td>&amp;#163;</td>
+	    </tr>
+
+	    <tr>
+	      <td>¥</td>
+	      <td>人民币/日元</td>
+	      <td>&amp;yen;</td>
+	      <td>&amp;#165;</td>
+	    </tr>
+
+	    <tr>
+	      <td>€</td>
+	      <td>欧元</td>
+	      <td>&amp;euro;</td>
+	      <td>&amp;#8364;</td>
+	    </tr>
+
+	    <tr>
+	      <td>§</td>
+	      <td>小节</td>
+	      <td>&amp;sect;</td>
+	      <td>&amp;#167;</td>
+	    </tr>
+
+	    <tr>
+	      <td>©</td>
+	      <td>版权</td>
+	      <td>&amp;copy;</td>
+	      <td>&amp;#169;</td>
+	    </tr>
+
+	    <tr>
+	      <td>®</td>
+	      <td>注册商标</td>
+	      <td>&amp;reg;</td>
+	      <td>&amp;#174;</td>
+	    </tr>
+
+	    <tr>
+	      <td>™</td>
+	      <td>商标</td>
+	      <td>&amp;trade;</td>
+	      <td>&amp;#8482;</td>
+	    </tr>
+
+	    <tr>
+	      <td>×</td>
+	      <td>乘号</td>
+	      <td>&amp;times;</td>
+	      <td>&amp;#215;</td>
+	    </tr>
+
+	    <tr>
+	      <td>÷</td>
+	      <td>除号</td>
+	      <td>&amp;divide;</td>
+	      <td>&amp;#247;</td>
+	    </tr>
+</tbody></table>
+
+
+
+	<h2>超链接</h2>
+	<hr>
+	<p>超链接共有5种，其实不同就在于herf属性的url的不同。</p>
+	<p>1.链接网页：就是普通的URL:href="http://www.baidu.com",注意http://必须有。</p>
+	<p>2.链接本地文档：herf="本地文档名"，注意要在一个文件夹里，不然就用</p>
+	<p>3.图片链接：应该在a元素中加入子元素img，用它的src属性</p>
+	<p>4.邮箱链接：herf="mailto:335677179@qq.com"注意mailto</p>
+	<p>5.下载文件：只要浏览器辨识不清就会自动跳转到下载界面。</p>
+	<h2>锚点</h2>
+	<hr>
+	<p>锚点是超链接的一种，但是它会跳转到本地文档的某一部分，现在先了解target属性</p>
+	<p>target有4个值，分别是 _self：当前位置 _blank：当前位置 _top：最顶层框架 _parent：父框架</p>
+	<p>创建锚点的步骤：</p>
+	<p>1.创建一个锚点，是a标签</p>
+	<p>2.在想确定位置的元素加上id属性</p>
+	<p>3.在a标签的herf属性中加上#id值即可，注意一定要有#</p>
+</body>
+</html>

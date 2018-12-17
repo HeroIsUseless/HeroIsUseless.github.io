@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UFT-8">
+	<title>SCM</title>
+	<link rel="stylesheet" type="text/css" href="style_main.css">
+</head>
+<body>
+	<h1>函数</h1>
+	<hr>
+	<p>pinMode(pin,mode)函数：用以配置引脚为输出还是输入模式，无返回值，pin参数表示引脚，mode参数表示输入输出——INPUT或OUTPUTINPUT_PULLUP表示输入再加上内部上拉电阻</p>
+	<p>digitalWrite(pin,mode)函数，用以配置引脚的高低电平，mode有两个值：HIGH高电平,LOW低电平</p>
+	<p>digitalRead(pin),用于读取引脚的高低电平水平，有LOW和HIGH两种返回值</p>
+	<p>delay(int time),表示延时多少毫秒，time表示时间，单位毫秒</p>
+	<p>delayMicroseconds(int time),表示延时多少微秒，time表示时间，单位微秒</p>
+	<p>Serial.begin(speed):设定波特率，常见的波特率有300,600,1200，9600,19200...这里使用9600baud。</p>
+	<p>print(val):输出字符，没有引号之类，后面还可以加格式符，不过没什么卵用。</p>
+	<p>Serial.printIn()是print()的加强版，只是在后面自动添上\n而已，即便没有任何参数，也会输出\n。</p>
+	<p>analogReference(DEFAULT)表示使用3.3V电压作为基准源</p>
+	<p>a=analogRead(A1);读取A1口的电压值，(模拟输入引脚为A1：const int a = A1;)</p>
+	<h1>其他</h1>
+	<hr>
+	<p>延时去抖：在处理按键相应的程序时，为防止按键抖动造成误操作，一般都作一个延时去抖处理。延时一般都在5ms~20ms，这样单片机能够正确读取高低电平。</p>
+	<p>msp430内部有上拉和下拉，但需要开启它</p>
+	<p>VCC是3.3伏电压。</p>
+</body>
+</html>
