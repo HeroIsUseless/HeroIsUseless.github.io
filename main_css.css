@@ -1,7 +1,7 @@
 #dFoot{
-	width: 100px;
+	width: 150px;
 	height: 30px;
-	background: rgb(206,208,214);
+	background: rgb(139, 146, 168);                        
 	position: fixed;
 	bottom: 0px;
 }
