@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
-	<meta charset="UFT-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="author" content="HeroIsUseless">
 	<meta name="keywords" content="emmmmmm">
 	<meta name="description" content="emmmmmm">
-	<!-- <meta http-equiv="refresh" content="200"> -->
+	<meta http-equiv="refresh" content="200"> <!--每200毫秒刷新一次-->
 	<title>main</title>
 	<link rel="stylesheet" type="text/css" href="main_css.css">
+	<script src="jquery-3.3.1.js"></script>
+	<!--按钮部分-->
     <script type="text/javascript">
 	  		function button1_click(){
-	  			alert("开始");
+	  			alert("上一篇");
 	  		}
 	</script>
-    <script src="jquery-3.3.1.js"></script>
+	<!--鼠标指针特效效果-->
     <script>
     	var needMove=false,         
         pageX=0,          
@@ -60,14 +62,13 @@
 		    element.css("left", x);              
 		    element.css("top", y);    
 		});    
-
-
-
-
     </script>
 </head>
 <body>
-	<header><iframe name="frame2" src="miniMenu/miniMenu.html" width="100%" height="300px"></iframe></header>
+	<header>
+		<!--<iframe name="frame2" src="miniMenu/miniMenu.html" width="100%" height="300px">
+		</iframe>-->
+	</header>
 	<div id="div0" style="width: 100%">
 		<div id="div1" style="float: left;width: 10%;">
 			<h1>C语言</h1>
@@ -76,11 +77,11 @@
 			<hr>
 			<a href="SCM/SCM.HTML" target="frame1"><h1>单片机</h1></a>
 			<hr>
-			<a href="Hank/hack.HTML" target="frame1"><h1><ins>黑客技术</ins></h1></a>
+			<!--<a href="Hank/hack.HTML" target="frame1"><h1><ins>黑客技术</ins></h1></a>-->
 			<hr>
-			<a href="heroHonor/HeroHonor.html" target="frame1"><h1>王者荣耀</h1></a>
+			<!--<a href="heroHonor/HeroHonor.html" target="frame1"><h1>王者荣耀</h1></a>-->
 		</div>
-		<div id="div2" style="float: left;width: 20%">
+		<div id="div2" style="float: left; width: 20%">
 			
 			<ul>
 				<li><a href="C/C.html" target="frame1">C语言基本知识</a></li>
@@ -114,7 +115,6 @@
 	    </div> 
 
 	  <footer>
-
 	  	<div id="dFoot">
 	  		<button id="button1" onclick="button1_click()">上一篇</button>
 	  		<button>下一篇</button>
