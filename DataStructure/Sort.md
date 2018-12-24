@@ -27,3 +27,37 @@ for(int i=L.Length; i>0; i--){
 >首先要会创建最小堆，堆排序实际上就是创建最小堆的过程，堆排序是不稳定的，不是大顶堆，之前做过，现在忘了， 先构造一个大顶堆，然后将这个大顶堆变换成一个有序序列，就是这样，分成两个函数
 # 表排序
 >又称间接排序，排序时不调整元素的实际位置，而是定义一个额外的数组作为“表”（table）。根据元素的关键字大小来调整元素对应下标在表中的位置。表排序在调整下标的位置时可以使用其他的排序算法，例如直接插入排序。然后进行堆的缩小，同时满足堆的定义
+>完全二叉树通常选择采用顺序存储结构的方式，但关键是，二叉树是如何存进去的呢？其实就是按照层序输入的，那么第一个元素就是根元素每一个元素的父节点就是它位置的一半，但应该从0开始不是吗？不，实践证明从1开始，如果从0开始呢？就错位了，不能运行的那种，一般升序采用大顶堆，降序采用小顶堆
+```
+void HeapSort( HeapType  H) { 
+  int i; KeyType rc;
+  for(i=H.Length/2; i>0; i--) {
+      //是所有中间节点调整一遍，因为这个堆排序只能排一个链
+      HeapAdjust(H, i, H.Length);
+   }
+  for(i=H.Length;i>1;i--) {
+      rc=H.elem[1];
+      H.elem[1]=H.elem[i]; 
+      H.elem[i]=rc;
+      //因为根会被每一条链遍历到，所以可行
+      HeapAdjust(H, 1, i-1); 
+   }
+ }
+void HeapAdjust(HeapType H, int s, int m){
+    int node = s;
+    int child = node*2;
+    while (child <= m) {
+        if (child+1<=m && H.elem[child]<H.elem[child+1])
+            child += 1;
+        if (H.elem[node] > H.elem[child]) 
+            return;
+        else { 
+            int t = H.elem[node];
+            H.elem[node] = H.elem[child];
+            H.elem[child] = t;
+            node = child;
+            child = node*2;
+        }
+    }
+}
+```
