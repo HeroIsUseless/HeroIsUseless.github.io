@@ -61,3 +61,5 @@ void HeapAdjust(HeapType H, int s, int m){
     }
 }
 ```
+# 归并排序
+>时间复杂度比较小，是稳定排序
