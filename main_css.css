@@ -1,4 +1,21 @@
+#header{
+    padding: 5dp;
+}
+.menu{
+    float:left;
+    height:80px;
+    width:150px;
+    text-align:center;
+}
+.submenu{
+    float:left;
+    height:50px;
+    width:150px;
+    text-align:center; 
+    color: white;
+}
 #dFoot{
+    clear: both;
 	width: 150px;
 	height: 30px;
 	background: rgb(139, 146, 168);                        
