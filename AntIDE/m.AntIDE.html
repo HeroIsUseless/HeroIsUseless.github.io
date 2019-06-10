@@ -1,1 +1,39 @@
-正在建设中...
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="homepage.css">
+</head>
+
+<body>
+    <div id="background">  
+        <div id="foreground">
+            <h1 id="title">高效的文字写作与编程</h1>
+            <h2 id="sub_title">轻量级文本编辑器</h2>
+        </div>
+        <img id="slideshow"src="example.png"/>
+        <div id="download_bt" style="width: 100%;"><a style="text-decoration: none; color: black;" href="https://raw.githubusercontent.com/HeroIsUseless/FileShortcuts/master/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%9C%A8%E8%BF%99%E9%87%8C/FileShortcuts.apk">立即下载</a></div>
+        <h1 style="color: white;">详细介绍</h1>
+        <h1 style="color: white;">特色功能展示</h1>
+        <div class="cardView" style="width: 200px; height: 200px; background: white">暂时啥都没有。。</div>
+        <h1 style="color: white;">适用平台</h1>
+    </div>
+</body>
+    <script>
+        var userAgentInfo = navigator.userAgent;  
+            var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+            var flag = false;
+        var v=0
+        for ( v = 0; v < Agents.length; v++) 
+        {  
+                 if (userAgentInfo.indexOf(Agents[v]) > 0) { 
+                    flag = true; 
+                    break;
+                 }
+            }  
+        if(!flag){
+            //window.location='homepage.html';  //如果是PC设备访问，就跳转到指定的网址。
+        }
+    </script>
+</html>
