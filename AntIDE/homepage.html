@@ -7,21 +7,30 @@
 </head>
 
 <body>
-    <div id="background" style="height: 3000px; background: #00C1E8;">  
-        <div id="forground" style="height: 1000px; background: #00c1e8;">
-            <div id="blank" style=" height: 300px;  background-image: url(background.png);"></div>
-            <h1 id="title" style="color: white; margin-top: 20px;">高效的文字写作与编程</h1>
-            <h2 style="color: white; margin-top: 20px;">轻量级文本编辑器</h2>
-            <img style="width: 500px; margin-top: 20px;" src="example.png"/>
-            <div id="download_bt" ><a style="text-decoration: none; color: black;" href="https://raw.githubusercontent.com/HeroIsUseless/FileShortcuts/master/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%9C%A8%E8%BF%99%E9%87%8C/FileShortcuts.apk">立即下载</a></div>
+    <div id="background">  
+        <div id="foreground">
+            <h1 id="title">高效的文字写作与编程</h1>
+            <h2 id="sub_title">轻量级文本编辑器</h2>
         </div>
+        <img id="slideshow"src="example.png"/>
+        <div id="download_bt" ><a style="text-decoration: none; color: black;" href="https://raw.githubusercontent.com/HeroIsUseless/FileShortcuts/master/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F%E5%9C%A8%E8%BF%99%E9%87%8C/FileShortcuts.apk">立即下载</a></div>
         <h1 style="color: white;">详细介绍</h1>
         <h1 style="color: white;">特色功能展示</h1>
         <div class="cardView" style="width: 200px; height: 200px; background: white">暂时啥都没有。。</div>
         <h1 style="color: white;">适用平台</h1>
-
-
     </div>
 </body>
-
+<script>
+    var userAgentInfo = navigator.userAgent;  
+        var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+        var flag = false;
+    var v=0
+    for ( v = 0; v < Agents.length; v++) 
+    {  
+                if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = true; break; }  
+        }  
+    if(flag){
+        window.location='m.AntIDE.html';  //如果是移动设备访问，就跳转到m.html。
+    }
+</script>
 </html>

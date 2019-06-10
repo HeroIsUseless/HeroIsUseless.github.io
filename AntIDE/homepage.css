@@ -4,6 +4,29 @@
     margin: 0;
     text-align: center;
 }
+#background{
+    height: 3000px; 
+    background: #00C1E8;
+}
+#foreground{
+    height: 300px; 
+    padding-top: 100px;
+    background: #00c1e8;
+    background-image: url(background.png);
+}
+#title{
+    color: white; 
+    font-size: 60px;
+    margin-bottom: 100px;
+}
+#sub_title{
+    color: white; 
+    margin-top: 20px;
+}
+#slideshow{
+    width: 500px; 
+    margin-top: 20px;
+}
 #download_bt{
     display: flex;
     align-items: center;
