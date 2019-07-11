@@ -17,7 +17,7 @@
 #title{
     color: white; 
     font-size: 60px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 #sub_title{
     color: white; 
@@ -33,6 +33,7 @@
     border: 0;
     border-radius: 100px;
     margin: 0 auto;
+    margin-top: 20px;
     height: 60px;
     width: 120px;
     background: #FFE04A;
@@ -43,6 +44,9 @@
     width: 100%;
 }
 .cardView{
+    width: 300px; 
+    height: 200px; 
+    background: white;
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
